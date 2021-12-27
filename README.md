@@ -9,4 +9,4 @@ or create a folder to the .xlsx files;
 * Go to treatment.py and modify the paths to the correct ones based on your machine;
 * Then, run the main.py and follow the simple menu 
 
- ### **OBSERVATION: For this program to work correctly, make sure you have Python version 3.10 installed.**
+ ### **OBSERVATION: For this program work properly, make sure you have Python version 3.10 installed.**
