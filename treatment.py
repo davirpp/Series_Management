@@ -8,6 +8,7 @@ class Series:
     def __init__(self):
         """ Constructor instantiate the class and get the DataFrame's """
 
+        # Put your correct path for both Excel's
         self.__data_frame_final = pd.read_excel("../../../Desktop/Code/Series/s_final.xlsx")
         self.__data_frame_ongoing = pd.read_excel("../../../Desktop/Code/Series/s_ongoing.xlsx")
 
