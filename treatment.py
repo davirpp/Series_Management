@@ -166,18 +166,26 @@ def send_message(serie, mode, add_del_up):
 
     match add_del_up:
         case 'add':
-            action = 'added'
-            connector = 'to'
+            action, connector = 'added', 'to'
         case 'del':
-            action = 'deleted'
-            connector = 'from'
+            action, connector = 'deleted', 'from'
         case 'up':
-            action = 'updated'
-            connector = 'in'
+            action, connector = 'updated', 'in'
 
     if mode == 'f':
         type_ = 'finished'
     elif mode == 'o':
         type_ = 'ongoing'
+
+    # Alternative way for who don't have python 3.10
+    #
+    # dict1 = {'add': ('added', 'to'),
+    #          'del': ('deleted', 'from'),
+    #          'up': ('updated', 'in')}
+    #
+    # action, connector = dict1[add_del_up]
+    #
+    # dict2 = {'f': 'finished', 'o': 'ongoing'}
+    # type_ = dict2[mode]
 
     print(f"\n'{serie}' {action} {connector} {type_} series!")
