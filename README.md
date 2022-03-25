@@ -3,7 +3,9 @@ This programs works simply manipulating .xlsx files that was created by the user
 * The 2 .xlsx files are examples of the 'shape' for the files that the user will use
 
 ## How to use it
-* First of all, make sure you have Pandas Library installed on your Python, ```pip install pandas``` is enough;
+* First of all, make sure you have installed: 
+     * Pandas Library, ```pip install pandas``` is enough;
+     * Openpyxl Library, ```pip install openpyxl``` is enough;
 * Once you create a folder and put the [main.py](https://github.com/davirpp/Series_Management/blob/master/main.py) and
 [treatment.py](https://github.com/davirpp/Series_Management/blob/master/treatment.py), you can choose if you want to keep all these files together (including the .xlsx files)
 or create a folder to the .xlsx files;
